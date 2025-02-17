@@ -180,6 +180,20 @@
                 >
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-6"
+                  ><i class="fas fa-user-circle fa-fw me-2"></i> routage imbriqué (Nested Routing)</a
+                >
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-7"
+                  ><i class="fas fa-user-circle fa-fw me-2"></i> lazy loading en React et Protection des routes</a
+                >
+              </li>
+
+
             </ul>
           </div>
         </div>
@@ -457,6 +471,8 @@ La navigation est effectué suite a une action et le changement de l'url est bie
 <p class="my-2"> utiliser useEffect pour afficher dans la console le paramètre price et explorer le cas où l'étudiant reçoit un paramètre dans l'URL. À partir de ce paramètre, l'étudiant pourra effectuer un traitement, comme par exemple effectuer un appel à une API pour récupérer des données supplémentaires. </p>
 Resultat 👉<img src="/assets/pp.png" class="img-fluid w-100" alt="">
 
+<h6 class="text-warning"> Exercice à faire par un etudiant saisie aléatoirement pour faire un autre exemple en affichant cette foi le nombre des participants</h6>
+
                     </div>
                   </div>
                 </div>
@@ -512,12 +528,12 @@ dans dans le composant app.jsx vous allez garder votre route qui definit la page
 
 <h5 class="text-danger">Error page ou bien redirection vers page not found</h5>
 
-<p class="mt-2">
+<p class="my-2">
 
   etape 1 : je vais crrer une page Error page
   <img src="/assets/errr.png" class="img-fluid w-100" alt="">
 </p>
-<p class="mt-2">
+<p class="my-2">
 
   etape 2 : je vais configurer la route qui nous homéne vers --> une page Error page
   <img src="/assets/c.png" class="img-fluid w-100" alt="">
@@ -530,14 +546,12 @@ dans dans le composant app.jsx vous allez garder votre route qui definit la page
   <img src="/assets/p.png" class="img-fluid w-100" alt="">
 
 </p>
+<p class="my-3">
+ Faire tester en tapant des url aléatoire qui  n'existe pas
+  <img src="/assets/testtini.png" class="img-fluid w-100" alt="">
 
-  <ul class="mt-3">
-    <li> <strong> useParams()</strong> permet de récupérer les paramètres d'URL dans le composant cible</li>
-    <li>Route avec un paramètre dynamique permet de créer une URL dynamique, où la valeur peut être récupérée et utilisée dans le composant</li>
-  <li>En configurant la route comme "/event/by/:price", le prix de chaque événement peut être récupéré et affiché sur une page dédiée.</li>
-  </ul>
-<p class="my-2"> utiliser useEffect pour afficher dans la console le paramètre price et explorer le cas où l'étudiant reçoit un paramètre dans l'URL. À partir de ce paramètre, l'étudiant pourra effectuer un traitement, comme par exemple effectuer un appel à une API pour récupérer des données supplémentaires. </p>
-Resultat 👉<img src="/assets/pp.png" class="img-fluid w-100" alt="">
+</p>
+
 
                     </div>
                   </div>
@@ -546,6 +560,168 @@ Resultat 👉<img src="/assets/pp.png" class="img-fluid w-100" alt="">
 
               </div>
             </div>
+
+
+
+            <div class="tab-pane" id="tab-6">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">routage imbriqué (Nested Routing)</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Nous allons aborder le routage imbriqué (Nested Routing) en deux volets. Le premier volet concerne la définition de routes imbriquées simples, où nous organisons des sous-routes à l'intérieur de routes principales pour une structure logique de navigation. Le deuxième volet traite d'un cas particulier, comme les tableaux de bord d'administrateur, où les sous-routes sont souvent plus complexes, avec des composants spécifiques qui varient selon l'onglet ou la section du tableau de bord.
+
+                     </p>
+                     <h6 class="text-success">
+                     Configuration d'un simple exemple
+                     <img src="/assets/nested.png" class="img-fluid w-100 my-3" alt="">
+                     </h6>
+
+<ul>
+<li>Route principale : Le composant <strong>Route</strong> principal contient plusieurs sous-routes. Chaque sous-route est définie avec une propriété path, qui détermine l'URL à laquelle la route est associée.</li>
+<li>Routes imbriquées : sous-routes pour afficher différentes sections comme ajouter-evenement ...  </li>
+
+</ul>
+<p class="my-3">
+  Tester les routes :
+</p>
+<img src="/assets/a.png" class="img-fluid w-100 my-3" alt="">
+<img src="/assets/ee.png" class="img-fluid w-100 my-3" alt="">
+<h6 class="text-success"> Cas des dashboard </h6>
+<p class="my-3">
+  Dans le cas d'un tableau de bord pour un administrateur, il est courant d'avoir une barre latérale (sidebar) et une barre de navigation (navbar) fixes, qui restent constantes tout au long de la navigation. Ce qui change en fonction des sous-routes, c'est le contenu principal affiché dans la zone centrale, permettant ainsi à l'utilisateur de naviguer entre différentes sections (comme "utilisateurs", "statistiques", "paramètres") sans recharger ou dupliquer toute la structure de la page.
+
+Il est important de noter qu'il ne faut pas copier le code complet du tableau de bord à chaque fois que l'on veut afficher une nouvelle section. Beaucoup d'étudiants commettent l'erreur de copier toute la structure de la page à chaque ajout de nouvelle section, ce qui est totalement incorrect et inefficace. Au lieu de cela, il faut définir des routes imbriquées où le sidebar et le navbar sont partagés, et seules les parties spécifiques du contenu changent en fonction de la route sélectionnée. Cela permet de garder une structure propre, réutilisable et facilement maintenable.
+</p>
+<p class="my-2">
+  étape 1 : je vais crrer une page dit admin-layout dont laquelle je vais mettre une dashboard administrateur.<br>
+  étapes 2 : configurer quelque routes <br>
+
+</p>
+<img src="/assets/admin1.png" class="img-fluid w-100 my-3" alt="">
+<p class="mb-3">
+  étape 3 : Comment afficher les composant AjouterEvent et Events dans le dashboard d'administrateur ?
+</p>
+
+<h4 class="text-success">
+  Utilisation de du composant Outlet
+</h4>
+<img src="/assets/outlet.png" class="img-fluid w-100 my-3" alt="">
+<p class="my-2">
+  Le composant Outlet  est utilisé pour rendre des routes imbriquées. Il représente un espace réservé dans votre composant, où les composants enfants correspondants à la route actuelle seront affichés.<br>
+  Dans un tableau de bord utilisateur, vous pouvez avoir plusieurs sections (comme un profil, des paramètres, des rapports, etc.) qui nécessitent leur propre contenu tout en partageant une mise en page générale (comme une barre de navigation ou un menu latéral).<br>
+  Avantage : Réutilisation de la mise en page,Navigation fluide,Modularité
+</p>
+
+
+
+<ul>
+  <li>
+<strong>to :</strong>     Cette propriété spécifie la nouvelle route vers laquelle vous souhaitez rediriger l'utilisateur. Dans notre cas, c'est /signin.
+  </li>
+  <li>
+   <strong>replace :</strong>  Lorsque cette propriété est définie, elle remplace l'entrée actuelle dans l'historique du navigateur. Cela signifie que l'utilisateur ne pourra pas revenir à l'ancienne route (/login) en utilisant le bouton "Précédent" de son navigateur. La redirection devient une étape invisible dans l'historique.
+  </li>
+
+</ul>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+            <div class="tab-pane" id="tab-7">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">lazy loading en React</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Le Lazy Loading en React est une technique permettant de charger des composants uniquement lorsque cela est nécessaire, plutôt que de tout charger au démarrage de l’application. Cela permet d'optimiser les performances, en réduisant le temps de chargement initial et en améliorant l'expérience utilisateur.
+
+                     </p>
+                     <h6 class="text-success">
+                     Configuration d'un simple exemple en utilisant les compsant fournie par la biliothéque react router
+                     <img src="/assets/configLazy.png" class="img-fluid w-100 my-3" alt="">
+                     <img src="/assets/lazy.png" class="img-fluid w-100 my-3" alt="">
+                     </h6>
+
+<ul>
+<li>Route principale : Le composant <strong>Route</strong> Le composant Suspense est une fonctionnalité de React qui permet de gérer l'affichage d'un composant en attente de chargement.</li>
+<li> Il est obligatoire lorsqu'on utilise React.lazy() pour charger des composants de manière asynchrone.</li>
+<li> L'attribut fallback définit ce qui s'affiche en attendant que le composant soit chargé.</li>
+<li> Ici,<strong>fallback</strong>   signifie qu'un simple message "Chargement..." s'affichera tant que le composant Home n'est pas encore chargé.</li>
+
+</ul>
+<h6 class="text-success my-3">
+
+  Route Guards
+</h6>
+<p class="my-2">
+  Les Route Guards en React Router permettent de protéger l'accès à certaines pages en fonction de conditions spécifiques, comme l'authentification d'un utilisateur. Avant d'afficher une route, un garde vérifie si l'utilisateur a les permissions nécessaires. Si ce n'est pas le cas, il est redirigé vers une autre page, comme la page de connexion. Cela garantit une navigation sécurisée et contrôlée dans l'application.
+</p>
+
+<ul class="my-2">
+  <li>étape 1 : création d'un  composant PrivateRoute et un composant IsNoteAuthentificated</li>
+  <img src="/assets/private.png" class="img-fluid w-100 my-3" alt="">
+  <img src="/assets/isnot.png" class="img-fluid w-100 my-3" alt="">
+
+
+  <li>étape 2 : Dans App.jsx déclarer une state comme le suivant :  <strong>const [isAuthenticated, setIsAuthenticated] = useState(false) </strong> </li>
+  <li>étape 3 : configurer les route d'administrateur et expliquer le concept de la protection des routes </li>
+  <img src="/assets/cc.png" class="img-fluid w-100 my-3" alt="">
+
+
+
+  <li>étape 4 : Faire exemple de test et conclure que la navigation vers admin dashboard ne peux pas etre effectué  </li>
+  <img src="/assets/auth.png" class="img-fluid w-100 my-3" alt="">
+
+  <li>étape 5 : dans le route de login nous allons faire une modification du state :   </li>
+  <img src="/assets/loged.png" class="img-fluid w-100 my-3" alt="">
+
+  <li>étape 6 : Dans le composant Login, nous allons recevoir une fonction passée en props et l'exécuter lorsque l'utilisateur clique sur le bouton Login grâce à l'événement onClick. Cela permet de déclencher une action spécifique définie dans le composant parent, comme l'authentification de l'utilisateur  </li>
+
+  <img src="/assets/loginBtn.png" class="img-fluid w-100 my-3" alt="">
+  <img src="/assets/l.png" class="img-fluid w-100 my-3" alt="">
+<li>etape 6 : Faire le test
+  <img src="/assets/login.png" class="img-fluid w-100 my-3" alt="">
+  <img src="/assets/heloo.png" class="img-fluid w-100 my-3" alt="">
+</li>
+</ul>
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+
           </div>
         </div>
       </div>
