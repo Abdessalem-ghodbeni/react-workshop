@@ -1,0 +1,557 @@
+<main>
+  <!-- =======================
+  Menu item START -->
+  <section class="pt-4">
+    <div class="container">
+      <div class="card rounded-3 border p-3 pb-2">
+        <!-- Avatar and info START -->
+        <div class="d-sm-flex align-items-center">
+          <div class="avatar avatar-xl mb-2 mb-sm-0">
+            <img
+              class="avatar-img rounded-circle"
+              src="assets/images/avatar/01.jpg"
+              alt=""
+            />
+          </div>
+          <h4 class="mb-2 mb-sm-0 ms-sm-3">
+            <span class="fw-light">Hi</span> Jacqueline Miller
+          </h4>
+          <a
+            href="add-listing.html"
+            class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0"
+            ><i class="bi bi-plus-lg fa-fw me-2"></i>Add New Listing</a
+          >
+        </div>
+        <!-- Avatar and info START -->
+
+        <!-- Responsive navbar toggler -->
+        <button
+          class="btn btn-primary w-100 d-block d-xl-none mt-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#dashboardMenu"
+          aria-controls="dashboardMenu"
+        >
+          <i class="bi bi-list"></i> Dashboard Menu
+        </button>
+
+        <!-- Nav links START -->
+        <div
+          class="offcanvas-xl offcanvas-end mt-xl-3"
+          tabindex="-1"
+          id="dashboardMenu"
+        >
+          <div class="offcanvas-header border-bottom p-3">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              data-bs-target="#dashboardMenu"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Offcanvas body -->
+          <div class="offcanvas-body p-3 p-xl-0">
+            <!-- Nav item -->
+            <div class="navbar navbar-expand-xl">
+              <ul class="navbar-nav navbar-offcanvas-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-dashboard.html"
+                    ><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-listings.html"
+                    ><i class="bi bi-journals fa-fw me-1"></i>Listings</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-bookings.html"
+                    ><i class="bi bi-bookmark-heart fa-fw me-1"></i>Bookings</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-activities.html"
+                    ><i class="bi bi-bell fa-fw me-1"></i>Activities</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-earnings.html"
+                    ><i class="bi bi-graph-up-arrow fa-fw me-1"></i>Earnings</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="agent-reviews.html"
+                    ><i class="bi bi-star fa-fw me-1"></i>Reviews</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="agent-settings.html"
+                    ><i class="bi bi-gear fa-fw me-1"></i>Settings</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdoanMenu"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-list-ul fa-fw me-1"></i>Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdoanMenu">
+                    <!-- Dropdown menu -->
+                    <li><a class="dropdown-item" href="#">Item 1</a></li>
+                    <li><a class="dropdown-item" href="#">Item 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Nav links END -->
+      </div>
+    </div>
+  </section>
+  <!-- =======================
+  Menu item END -->
+
+  <!-- =======================
+  Content START -->
+  <section class="pt-0">
+    <div class="container vstack gap-4">
+      <!-- Title START -->
+      <div class="row">
+        <div class="col-12">
+          <h1 class="fs-4 mb-0">
+            <i class="bi bi-gear fa-fw me-1"></i>Settings
+          </h1>
+        </div>
+      </div>
+      <!-- Title END -->
+
+      <!-- Tabs START -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="bg-light pb-0 px-2 px-lg-0 rounded-top">
+            <ul
+              class="nav nav-tabs nav-bottom-line nav-responsive border-0 nav-justified"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link mb-0 active"
+                  data-bs-toggle="tab"
+                  href="#tab-1"
+                  ><i class="fas fa-cog fa-fw me-2"></i>Introduction
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-2"
+                  ><i class="fas fa-bell fa-fw me-2"></i>Notification
+                  Settings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-3"
+                  ><i class="fas fa-user-circle fa-fw me-2"></i> Le Hook useNavigate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-4"
+                  ><i class="fas fa-user-circle fa-fw me-2"></i> Routes dynamiques et paramètres</a
+                >
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-5"
+                  ><i class="fas fa-user-circle fa-fw me-2"></i> Redirections et Gestion des Erreurs en React Router</a
+                >
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs END -->
+
+      <!-- Tabs Content START -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="tab-content">
+            <!-- Tab content 1 START -->
+            <div class="tab-pane show active" id="tab-1">
+              <div class="row g-4">
+                <!-- Edit profile START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">Introduction :</h5>
+                    </div>
+                    <div class="card-body">
+                      Bonjour à tous, Aujourd'hui, nous allons plonger dans un
+                      aspect fondamental du développement d'applications
+                      modernes en React : le routage. Vous allez découvrir
+                      comment transformer votre application en une véritable SPA
+                      (Single Page Application)
+
+                    <p class= >
+                      j'aimerais bien rappeler alors Qu’est-ce qu’une SPA ?
+                    </p>
+                    <p>
+                      Dans une application web traditionnelle, chaque fois que
+                      vous changez de page, le navigateur recharge entièrement
+                      le document HTML depuis le serveur. Ce processus peut être
+                      lent et créer une expérience utilisateur peu fluide. En
+                      revanche, une SPA (Single Page Application) charge
+                      initialement une seule page HTML et met à jour
+                      dynamiquement son contenu en fonction des interactions de
+                      l'utilisateur, sans nécessiter de rechargement complet.
+
+                    </p>
+                    <p>👉 C’est ici qu’intervient <strong>le routage !</strong> Il permet d’afficher différents composants en fonction de l’URL, sans recharger la page.</p>
+
+<img src="/assets/routes.png" class="img-fluid w-100 my-2" alt="">
+<p class="mt-4">Route c'es comme son nom l'indique c'est partir vers une destination exacte </p>
+<h4>🧐 Une métaphore pour mieux comprendre
+  Imaginez que vous êtes dans un café ☕️</h4>
+
+  <ul>
+    <li>
+      Dans un site classique, à chaque commande, le serveur vous demande de quitter la table et de revenir pour être servi. 🏃‍♂️➡️🏃‍♀️
+    </li>
+    <li>
+
+      Dans une SPA, le serveur reste à votre table et vous apporte directement votre commande. Plus rapide et plus fluide !
+    </li>
+  </ul>
+
+
+
+
+
+
+                  </div> </div>
+                </div>
+                <!-- Edit profile END -->
+
+                <!-- Update Email START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">Comment fonctionne le routage en React alors?</h5>
+
+                    </div>
+                   <div class="card-body">
+                    <p>
+                      Dans l’écosystème React, la star du routage est la bibliothèque <strong> React Router </strong>
+                    </p>
+                    <p>Elle nous permet de définir des routes et d’afficher les composants correspondants selon l’URL actuelle.</p>
+
+                    <h4 class="text-danger">Installation et configuration React Router</h4>
+                    afin d'installer react router en utilise la commande suivane :  <strong> npm install react-router-dom
+                    </strong>
+                    <p class="text-danger">NB : Vous pouvez utliser votre gestionnaire de packge preféré comme yarn ...</p>
+                   <img src="/assets/routeBib.png" class="img-fluid w-50" alt="">
+
+
+
+                   </div>
+                  </div>
+                </div>
+
+                <!-- Update Password END -->
+              </div>
+            </div>
+            <!-- Tab content 1 END -->
+
+            <!-- Tab content 2 START -->
+            <div class="tab-pane" id="tab-2">
+              <div class="card border mb-4">
+                <!-- Card header -->
+                <div class="card-header bg-transparent border-bottom">
+                  <h5 class="card-header-title">Configuration de React Router</h5>
+                  <p class="mb-0">
+                    Une fois installé, la première étape est de configurer notre application pour utiliser le routage.
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  Dans votre fichier principal  App.js , encapsulez votre application avec le composant <strong>BrowserRouter </strong>
+
+                  <img src="/assets/browser.png" class="img-fluid w-75 my-2" alt="">
+                  <h6>👉 On peut voir  BrowserRouter  comme un passeport 🛂 qui permet à l’application de voyager entre les différentes routes !</h6>
+
+
+
+                    Dans React Router  nous utilisons les composants <strong>Routes</strong> et <strong>Route</strong> pour définir nos chemins.
+
+
+                    <ul class="mt-2">
+                      <li>
+                        <strong>Route</strong>
+                        Fonction : Le composant <strong>Route</strong> définit une route spécifique dans votre application. Il associe une URL à un composant React.
+
+                      </li>
+
+                      <li>
+                        Syntaxe : Vous spécifiez la propriété path pour définir l'URL et utilisez la propriété element pour indiquer quel composant doit être rendu lorsque cette URL est correspondant.
+                      </li>
+                   <li>
+                    <strong>Routes</strong>
+                    Fonction : Le composant <strong>Routes</strong> est un conteneur pour plusieurs <strong>Route</strong>. Il permet à React Router de gérer les routes imbriquées et de rendre le bon composant basé sur l'URL actuelle.
+                   </li>
+                        <li> 	Utilisation : Vous encapsulez plusieurs <strong>Route</strong> à l'intérieur de <strong>Routes</strong>. Cela permet de simplifier la gestion des routes et de s'assurer que seule la première route correspondante est rendue</li>
+
+                      </ul>
+
+<img src="/assets/routesContainer.png" class="img-fluid w-100" alt="">
+
+
+<h4 class="text-center text-danger">
+  Navigation dans l'application
+</h4>
+<p>
+ Pour permettre aux utilisateurs de naviguer entre ces pages sans recharger l'application, nous utilisons les composants <strong>Link ou NavLink </strong>
+</p>
+
+<ul>
+  <li>	Le composant  Link  permet de créer des liens qui modifient l'URL et rendent le composant associé à cette route.  Link : Remplace les balises   pour une navigation sans rechargement.
+
+    <img src="/assets/link.png" class="img-fluid w-100" alt="">
+  </li>
+
+
+
+
+  <li>	Le NavLink  est similaire à Link  mais offre l'avantage d'ajouter automatiquement une classe active lorsque le lien correspond à la route en cours. Cela est particulièrement utile pour le style et l'indication de la page active.
+    <img src="/assets/NavLink.png" class="img-fluid w-100" alt="">
+  </li>
+<li><h4 class="text-danger">il ne faux pas oublier d'importer les deux composant de la biliothéque du react router   <img src="/assets/image.png" class="img-fluid w-100" alt=""> </h4></li>
+
+</ul>
+
+<div class="row mt-5">
+  <div class="col-12 col-md-6"><h6 class="text-info">Ceci avec l'utilisation de Link (pas de style appliqué afin d'indiquer la route activée)</h6>
+    <img src="/assets/nvll.png" class="img-fluid w-100" alt="">
+  </div>
+  <div class="col-12 col-md-6"><h6 class="text-info">Ceci avec l'utilisation de NavLink (un  style est appliqué afin d'indiquer la route activée)</h6>
+    <img src="/assets/nvl.png" class="img-fluid w-100" alt="">
+  </div>
+</div>
+
+<p class="mt-3"> 👉 NavLink met en évidence le lien actif, tandis que Link est un simple lien de navigation.
+  ces deux composants sont l'equivalent de la balise lien en html
+</p>
+
+
+
+
+                </div>
+
+
+              </div>
+            </div>
+            <!-- Tab content 2 END -->
+
+            <!-- Tab content 3 START -->
+            <div class="tab-pane" id="tab-3">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">Navigation Programmée : Le Hook useNavigate</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Il arrive souvent que nous devions rediriger l'utilisateur après une action spécifique, comme la soumission d'un formulaire ou une opération d'authentification. Pour cela, React Router nous offre le hook useNavigate.
+                     </p>
+                     <p>
+                      Lors de la dernière séance, nous avons réalisé ensemble un atelier dans lequel vous avez affiché une liste d'événements en utilisant un composant Events pour la liste et un composant Event qui reçoit un événement en tant que props.
+
+Aujourd’hui, nous allons poursuivre avec cet exemple en ajoutant un nouveau composant AjouterEvent, qui présentera un formulaire permettant d’ajouter un événement. Lors de la soumission du formulaire, les valeurs saisies seront récupérées, et après une action et une condition, l’utilisateur sera redirigé vers la page affichant la liste des événements, gérée par le composant Events.
+
+( Enfin, je vous présenterai également un exemple d'authentification dans une application React, illustrant la communication et la navigation d’un administrateur comme un deusieme exemple pour mieux comprendre )
+                     </p>
+                     <p>Ajouter un composant ajouter evenement et configurer la route </p>
+                     <img src="/assets/g.png" class="img-fluid w-50" alt="">
+                    <img src="/assets/image1.png" class="img-fluid w-100" alt="">
+
+<p class="mt-3">
+  aprés avoir mettre en place le formulaire et recupérer les donneés saisie nous allons poser la question Comment maintenant naviguer vers la liste des evenements ?
+  certains etudiant vont répondre par l'utilisation des deux composant Link et NavLink mais ce n'est pas le cas ! non?
+
+</p>
+<h6>Implementation de use navigate </h6>
+La variable navigate est créée en utilisant le hook useNavigate de react-router-dom.
+
+👉 Cela permet d’effectuer une navigation programmée dans l’application React, par exemple pour rediriger l’utilisateur vers une autre page après une action
+<img src="/assets/navigate.png" class="img-fluid w-100" alt="">
+Utiliser la variable navigate dans la fonction handleSubmit()
+<img src="/assets/handleSubmit.png" class="img-fluid w-100" alt="">
+
+faire l'appel a la fonction handleSubmit() dans le button ajouter ET FAIRE  le test
+
+<img src="/assets/Adde.png" class="img-fluid w-100" alt="">
+
+La navigation est effectué suite a une action et le changement de l'url est bien remarqué et le contenu de la page est changé avec la liste des evenements
+<img src="/assets/newListe.png" class="img-fluid w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+            <div class="tab-pane" id="tab-4">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">Routes dynamiques et paramètres</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Une des forces de React Router réside dans la possibilité de créer des routes dynamiques grâce aux paramètres.
+                      Par exemple, pour afficher un profil utilisateur dont l'ID est passé dans l'URL, nous définissons la route suivante :
+
+                     </p>
+                     <p>
+                      Prenons l'exemple d'un événement pour expliquer ce concept. Imaginons que vous ayez une liste d'événements, et pour chaque événement, vous voulez afficher son prix su
+                     </p>
+                     <p>Ajouter un composant ajouter evenement et configurer la route </p>
+                     <h5>Étape 1 : Créer un composant EventPrice et cinfigurer une route dynamique </h5>
+                     <img src="/assets/evP.png" class="img-fluid w-50" alt="">
+                     <h5>Créer un bouton dans le composant  Event</h5>
+                    <img src="/assets/ev.png" class="img-fluid w-100" alt="">
+                    <p>Je vais expliquer que le prix de l'événement sera passé dans l'URL, et la route dynamique affichera la page avec ce prix dans le composant EventPrice</p>
+
+<p class="mt-3">
+  Dans le composant EventPrice je vais poser la question comment nous pouvons recupérer la valeur du price passé dans l'url?
+  citer des exemple et faire analogie avec angular.
+  <img src="/assets/p.png" class="img-fluid w-100" alt="">
+
+</p>
+
+  <ul class="mt-3">
+    <li> <strong> useParams()</strong> permet de récupérer les paramètres d'URL dans le composant cible</li>
+    <li>Route avec un paramètre dynamique permet de créer une URL dynamique, où la valeur peut être récupérée et utilisée dans le composant</li>
+  <li>En configurant la route comme "/event/by/:price", le prix de chaque événement peut être récupéré et affiché sur une page dédiée.</li>
+  </ul>
+<p class="my-2"> utiliser useEffect pour afficher dans la console le paramètre price et explorer le cas où l'étudiant reçoit un paramètre dans l'URL. À partir de ce paramètre, l'étudiant pourra effectuer un traitement, comme par exemple effectuer un appel à une API pour récupérer des données supplémentaires. </p>
+Resultat 👉<img src="/assets/pp.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab-5">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title">Redirections et Gestion des Erreurs en React Router</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Imaginons que vous ayez une application e-commerce et que, lors d'une maintenance, vous ayez décidé de changer l'URL de la page de connexion. L'ancienne URL était /login, mais la nouvelle version de l'application utilise maintenant /signin. Cependant, certains de vos clients ont l'habitude de taper directement /login dans la barre d'URL, ce qui pourrait les empêcher d'accéder à la page de connexion après le changement.
+
+                      Dans ce cas, vous ne voulez pas déranger vos utilisateurs et vous souhaitez garantir qu'ils soient redirigés vers la nouvelle page sans avoir à chercher le nouvel URL. Heureusement, React Router offre une solution simple et élégante pour gérer ce type de situation.
+
+                     </p>
+                     <h6 class="text-success">
+                      Solution avec React Router en utilisant " le composant fameux Navigate "
+                     </h6>
+                     <p>
+
+dans dans le composant app.jsx vous allez garder votre route qui definit la page login mais avec une petite changement
+
+<img src="/assets/replace.png" class="img-fluid w-100" alt="">
+                     </p>
+
+
+
+<ul>
+  <li>
+<strong>to :</strong>     Cette propriété spécifie la nouvelle route vers laquelle vous souhaitez rediriger l'utilisateur. Dans notre cas, c'est /signin.
+  </li>
+  <li>
+   <strong>replace :</strong>  Lorsque cette propriété est définie, elle remplace l'entrée actuelle dans l'historique du navigateur. Cela signifie que l'utilisateur ne pourra pas revenir à l'ancienne route (/login) en utilisant le bouton "Précédent" de son navigateur. La redirection devient une étape invisible dans l'historique.
+  </li>
+
+</ul>
+
+                     <h6>Si un client accède à l'ancienne route /login, il sera automatiquement redirigé vers la nouvelle route /signin sans avoir à chercher l'URL correcte. Cela garantit une expérience utilisateur fluide et confortable, sans perturber les habitudes des utilisateurs, même après un changement d'URL dans votre application. </h6>
+                     <h5>Créer un bouton dans le composant  Event</h5>
+                    <img src="/assets/ev.png" class="img-fluid w-100" alt="">
+
+
+
+                    <p>Je vais expliquer que le prix de l'événement sera passé dans l'URL, et la route dynamique affichera la page avec ce prix dans le composant EventPrice</p>
+
+<h5 class="text-danger">Error page ou bien redirection vers page not found</h5>
+
+<p class="mt-2">
+
+  etape 1 : je vais crrer une page Error page
+  <img src="/assets/errr.png" class="img-fluid w-100" alt="">
+</p>
+<p class="mt-2">
+
+  etape 2 : je vais configurer la route qui nous homéne vers --> une page Error page
+  <img src="/assets/c.png" class="img-fluid w-100" alt="">
+</p>
+
+
+                    <p class="mt-3">
+  Dans le composant EventPrice je vais poser la question comment nous pouvons recupérer la valeur du price passé dans l'url?
+  citer des exemple et faire analogie avec angular.
+  <img src="/assets/p.png" class="img-fluid w-100" alt="">
+
+</p>
+
+  <ul class="mt-3">
+    <li> <strong> useParams()</strong> permet de récupérer les paramètres d'URL dans le composant cible</li>
+    <li>Route avec un paramètre dynamique permet de créer une URL dynamique, où la valeur peut être récupérée et utilisée dans le composant</li>
+  <li>En configurant la route comme "/event/by/:price", le prix de chaque événement peut être récupéré et affiché sur une page dédiée.</li>
+  </ul>
+<p class="my-2"> utiliser useEffect pour afficher dans la console le paramètre price et explorer le cas où l'étudiant reçoit un paramètre dans l'URL. À partir de ce paramètre, l'étudiant pourra effectuer un traitement, comme par exemple effectuer un appel à une API pour récupérer des données supplémentaires. </p>
+Resultat 👉<img src="/assets/pp.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs Content END -->
+    </div>
+  </section>
+  <!-- =======================
+  Content END -->
+</main>
