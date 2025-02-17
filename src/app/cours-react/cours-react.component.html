@@ -9,19 +9,21 @@
           <div class="avatar avatar-xl mb-2 mb-sm-0">
             <img
               class="avatar-img rounded-circle"
-              src="assets/images/avatar/01.jpg"
+              src="assets/slouma.png"
               alt=""
             />
           </div>
           <h4 class="mb-2 mb-sm-0 ms-sm-3">
-            <span class="fw-light">Hi</span> Jacqueline Miller
+            <span class="fw-light">Bonjour</span>  Madame Linda
           </h4>
+
           <a
-            href="add-listing.html"
+
             class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0"
-            ><i class="bi bi-plus-lg fa-fw me-2"></i>Add New Listing</a
+            ><i class="bi bi-plus-lg fa-fw me-2"></i>TWIN</a
           >
         </div>
+        <p class="mt-3">Voici un simple plan à suivre pour présenter le concept du routage en React ce vendredi avec Twin 5. C'est une première ébauche qui pourra être ajustée selon vos retours et suggestions. Si vous souhaitez avoir le contenu détaillé, je peux également le fournir. N’hésitez pas à me faire part de vos remarques pour l’améliorer</p>
         <!-- Avatar and info START -->
 
         <!-- Responsive navbar toggler -->
@@ -36,89 +38,7 @@
         </button>
 
         <!-- Nav links START -->
-        <div
-          class="offcanvas-xl offcanvas-end mt-xl-3"
-          tabindex="-1"
-          id="dashboardMenu"
-        >
-          <div class="offcanvas-header border-bottom p-3">
-            <h5 class="offcanvas-title">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#dashboardMenu"
-              aria-label="Close"
-            ></button>
-          </div>
-          <!-- Offcanvas body -->
-          <div class="offcanvas-body p-3 p-xl-0">
-            <!-- Nav item -->
-            <div class="navbar navbar-expand-xl">
-              <ul class="navbar-nav navbar-offcanvas-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-dashboard.html"
-                    ><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a
-                  >
-                </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-listings.html"
-                    ><i class="bi bi-journals fa-fw me-1"></i>Listings</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-bookings.html"
-                    ><i class="bi bi-bookmark-heart fa-fw me-1"></i>Bookings</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-activities.html"
-                    ><i class="bi bi-bell fa-fw me-1"></i>Activities</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-earnings.html"
-                    ><i class="bi bi-graph-up-arrow fa-fw me-1"></i>Earnings</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="agent-reviews.html"
-                    ><i class="bi bi-star fa-fw me-1"></i>Reviews</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active" href="agent-settings.html"
-                    ><i class="bi bi-gear fa-fw me-1"></i>Settings</a
-                  >
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="dropdoanMenu"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i class="bi bi-list-ul fa-fw me-1"></i>Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdoanMenu">
-                    <!-- Dropdown menu -->
-                    <li><a class="dropdown-item" href="#">Item 1</a></li>
-                    <li><a class="dropdown-item" href="#">Item 2</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <!-- Nav links END -->
       </div>
     </div>
@@ -141,63 +61,59 @@
       <!-- Title END -->
 
       <!-- Tabs START -->
-      <div class="row g-4">
+      <div class="row g-4 p-3 mb-3">
         <div class="col-12">
           <div class="bg-light pb-0 px-2 px-lg-0 rounded-top">
             <ul
-              class="nav nav-tabs nav-bottom-line nav-responsive border-0 nav-justified"
+              class="nav nav-tabs nav-bottom-line border-0 nav-justified flex-nowrap overflow-auto d-flex"
               role="tablist"
+              style="white-space: nowrap"
             >
               <li class="nav-item">
-                <a
-                  class="nav-link mb-0 active"
-                  data-bs-toggle="tab"
-                  href="#tab-1"
-                  ><i class="fas fa-cog fa-fw me-2"></i>Introduction
+                <a class="nav-link mb-0 active" data-bs-toggle="tab" href="#tab-1">
+                  <i class="fas fa-book-open fa-fw me-2"></i> Introduction
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-2"
-                  ><i class="fas fa-bell fa-fw me-2"></i>Notification
-                  Settings</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-2">
+                  <i class="fas fa-bell fa-fw me-2"></i> Notification Settings
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-3"
-                  ><i class="fas fa-user-circle fa-fw me-2"></i> Le Hook useNavigate</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-3">
+                  <i class="fas fa-directions fa-fw me-2"></i> Le Hook useNavigate
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-4"
-                  ><i class="fas fa-user-circle fa-fw me-2"></i> Routes dynamiques et paramètres</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-4">
+                  <i class="fas fa-route fa-fw me-2"></i> Routes dynamiques et paramètres
+                </a>
               </li>
-
-
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-5"
-                  ><i class="fas fa-user-circle fa-fw me-2"></i> Redirections et Gestion des Erreurs en React Router</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-5">
+                  <i class="fas fa-exclamation-triangle fa-fw me-2"></i> Redirections et Gestion des Erreurs
+                </a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-6"
-                  ><i class="fas fa-user-circle fa-fw me-2"></i> routage imbriqué (Nested Routing)</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-6">
+                  <i class="fas fa-layer-group fa-fw me-2"></i> Routage imbriqué (Nested Routing)
+                </a>
               </li>
-
-
               <li class="nav-item">
-                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-7"
-                  ><i class="fas fa-user-circle fa-fw me-2"></i> lazy loading en React et Protection des routes</a
-                >
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-7">
+                  <i class="fas fa-spinner fa-fw me-2"></i> Lazy Loading et Protection des routes
+                </a>
               </li>
-
-
+              <li class="nav-item">
+                <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-8">
+                  <i class="fas fa-search fa-fw me-2"></i> useSearchParams et useLocation
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+
       <!-- Tabs END -->
 
       <!-- Tabs Content START -->
@@ -519,12 +435,12 @@ dans dans le composant app.jsx vous allez garder votre route qui definit la page
 </ul>
 
                      <h6>Si un client accède à l'ancienne route /login, il sera automatiquement redirigé vers la nouvelle route /signin sans avoir à chercher l'URL correcte. Cela garantit une expérience utilisateur fluide et confortable, sans perturber les habitudes des utilisateurs, même après un changement d'URL dans votre application. </h6>
-                     <h5>Créer un bouton dans le composant  Event</h5>
-                    <img src="/assets/ev.png" class="img-fluid w-100" alt="">
+
+                    <img src="/assets/login.png" class="img-fluid w-100" alt="">
 
 
 
-                    <p>Je vais expliquer que le prix de l'événement sera passé dans l'URL, et la route dynamique affichera la page avec ce prix dans le composant EventPrice</p>
+
 
 <h5 class="text-danger">Error page ou bien redirection vers page not found</h5>
 
@@ -718,7 +634,104 @@ Il est important de noter qu'il ne faut pas copier le code complet du tableau de
               </div>
             </div>
 
+            <div class="tab-pane" id="tab-8">
+              <div class="row g-4">
+                <!-- Security settings START -->
+                <div class="col-12">
+                  <div class="card border">
+                    <div class="card-header border-bottom">
+                      <h5 class="card-header-title"> useSearchParams et useLocation</h5>
+                    </div>
+                    <div class="card-body">
+                     <p>
+                      Les hooks useLocation et useSearchParams de React Router permettent de gérer l'URL dans une application React : useLocation récupère les informations sur l'URL actuelle, tandis que useSearchParams permet de lire et modifier les paramètres de requête.
 
+                     </p>
+                     <h6 class="text-success">
+                      useSearchParams && UseLocation de la biliothéque react router
+
+                     </h6>
+
+<ul>
+<!-- <li>étape 1 : Ajouter un composant dit EventListe et faire une configuration d'une nouvelle route
+  <img src="/assets/ax.png" class="img-fluid w-100 my-3" alt="">
+  <img src="/assets/ax.png" class="img-fluid w-100 my-3" alt="">
+</li> -->
+<li> Dans le composant Events nous allons importer useSearchParams a partir du biliothéque react router.</li>
+<li>expliqué l'utilité de useSearchParams : elle est utilisé pour lire et modifier les paramètres de recherche dans l'URL.</li>
+<li>query récupère la valeur du paramètre q dans l’URL (ou une chaîne vide si q n’existe pas).</li>
+<li>Filtrage : filteredEvents est un tableau qui contient uniquement les événements dont le name contient la valeur de query.</li>
+<li>Création du fonction handleSearchChange : c'est une fonction qui met à jour le paramètre q dans l’URL en fonction de la saisie de l’utilisateur dans le champ de recherche.</li>
+<li>Ajouter input pour saisir un titre avec lequel nous allons rechercher un événement</li>
+
+
+<img src="/assets/merde.png" class="img-fluid w-100 my-3" alt="">
+
+<li>Tester ce que nous avons fait : (Observation du changement de l'url, changement de contenue de la page au niveau des listes et expliquer le concept)</li>
+<img src="/assets/11.png" class="img-fluid w-100 my-3" alt="">
+</ul>
+<h6 class="text-success my-3">
+useLocation()
+</h6>
+<p class="my-2">
+  Dans le meme compsant,nous allons importer le useLocation de la biliothéque react router - déclarer une variable location qui nous permet de récupérer des informationssur l'url actuelle
+
+  <img src="/assets/location.png" class="img-fluid w-100 my-3" alt="">
+
+
+</p>
+
+<ul class="my-2">
+  <li>Résultat </li>
+  <img src="/assets/22.png" class="img-fluid w-100 my-3" alt="">
+
+
+</ul>
+
+<h6 class="text info">
+  Exemple 2 : Important
+</h6>
+<p class="text-justify my-2">
+  Exemple 2 :  nous mettons en place une navigation entre deux composants : EventListe et EventDetails, en utilisant useLocation et URLSearchParams pour transmettre et récupérer des informations via l'URL.
+
+  Le composant EventListe affiche une liste d'événements à partir d'un fichier JSON et permet à l'utilisateur de cliquer sur un événement pour voir ses détails. Lorsqu'un utilisateur clique sur "Voir Détails", les informations de l'événement (nom, prix, nombre de tickets, etc.) sont ajoutées sous forme de paramètres à l'URL et la navigation est effectuée avec navigate().
+
+  Dans EventDetails, nous utilisons useLocation pour récupérer l'URL actuelle et URLSearchParams pour extraire les données de l'événement depuis les paramètres de l'URL. Ces informations sont ensuite affichées dans une carte détaillée.
+
+  Ce concept permet de transmettre des données entre pages sans utiliser de state global ou de context, rendant l'application plus légère et facilement partageable en conservant les informations dans l'URL.
+</p>
+<ul class="my-2">
+  <li>Composant EventListe
+  <img src="/assets/eventListe.png" class="img-fluid w-100 my-3" alt="">
+
+</li>
+
+<li>Composant EventDetails
+  <img src="/assets/EventDetails.png" class="img-fluid w-100 my-3" alt="">
+
+</li>
+<li>Résultat :
+  <img src="/assets/33.png" class="img-fluid w-100 my-3" alt="">
+</li>
+</ul>
+
+<p class="p-2 mt-3">
+  Explication :
+  Dans notre application, les données des événements sont transmises via l'URL en utilisant des query parameters. Lorsqu'un utilisateur clique sur "Voir Détails" dans EventListe, nous construisons une URL contenant les informations de l'événement sous forme de paramètres (name, price, nbTickets, etc.). Par exemple, l'URL générée ressemble à :
+  <strong>http://localhost:5173/event-details?name=Festival+international+de+Carthage&price=30&nbTickets=10&nbParticipants=10&like=false
+  </strong>
+  Dans EventDetails, nous utilisons useLocation pour récupérer l'URL actuelle et URLSearchParams pour extraire les valeurs des paramètres. Ces données sont ensuite stockées dans un objet et affichées dynamiquement dans l'interface utilisateur. Cette approche permet de naviguer entre les pages tout en conservant les informations de l'événement dans l'URL, ce qui facilite le partage de liens et améliore l'expérience utilisateur.
+</p>
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
 
 
 
