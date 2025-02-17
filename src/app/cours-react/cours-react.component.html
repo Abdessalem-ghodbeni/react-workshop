@@ -34,7 +34,7 @@
           data-bs-target="#dashboardMenu"
           aria-controls="dashboardMenu"
         >
-          <i class="bi bi-list"></i> Dashboard Menu
+          Elaboré par Abdessalem
         </button>
 
         <!-- Nav links START -->
@@ -76,7 +76,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-2">
-                  <i class="fas fa-bell fa-fw me-2"></i> Notification Settings
+                  <i class="fas fa-bell fa-fw me-2"></i> Configuration de React Router
                 </a>
               </li>
               <li class="nav-item">
@@ -193,7 +193,9 @@
                     afin d'installer react router en utilise la commande suivane :  <strong> npm install react-router-dom
                     </strong>
                     <p class="text-danger">NB : Vous pouvez utliser votre gestionnaire de packge preféré comme yarn ...</p>
-                   <img src="/assets/routeBib.png" class="img-fluid w-50" alt="">
+                   <div class="text-center">
+                    <img src="/assets/routeBib.png" class="img-fluid w-50" alt="">
+                   </div>
 
 
 
@@ -231,7 +233,7 @@
                     <ul class="mt-2">
                       <li>
                         <strong>Route</strong>
-                        Fonction : Le composant <strong>Route</strong> définit une route spécifique dans votre application. Il associe une URL à un composant React.
+                        Le composant <strong>Route</strong> définit une route spécifique dans votre application. Il associe une URL à un composant React.
 
                       </li>
 
@@ -240,7 +242,7 @@
                       </li>
                    <li>
                     <strong>Routes</strong>
-                    Fonction : Le composant <strong>Routes</strong> est un conteneur pour plusieurs <strong>Route</strong>. Il permet à React Router de gérer les routes imbriquées et de rendre le bon composant basé sur l'URL actuelle.
+                     Le composant <strong>Routes</strong> est un conteneur pour plusieurs <strong>Route</strong>. Il permet à React Router de gérer les routes imbriquées et de rendre le bon composant basé sur l'URL actuelle.
                    </li>
                         <li> 	Utilisation : Vous encapsulez plusieurs <strong>Route</strong> à l'intérieur de <strong>Routes</strong>. Cela permet de simplifier la gestion des routes et de s'assurer que seule la première route correspondante est rendue</li>
 
@@ -368,8 +370,8 @@ faire l'appel a la fonction handleSubmit() dans le button ajouter ET FAIRE  le t
                      <p>
                       Prenons l'exemple d'un événement pour expliquer ce concept. Imaginons que vous ayez une liste d'événements, et pour chaque événement, vous voulez afficher son prix su
                      </p>
-                     <p>Ajouter un composant ajouter evenement et configurer la route </p>
-                     <h5>Étape 1 : Créer un composant EventPrice et cinfigurer une route dynamique </h5>
+                     <!-- <p>Ajouter un composant ajouter evenement et configurer la route </p> -->
+                     <h5>Étape 1 : Créer un composant EventPrice et configurer une route dynamique </h5>
                      <img src="/assets/evP.png" class="img-fluid w-50" alt="">
                      <h5>Créer un bouton dans le composant  Event</h5>
                     <img src="/assets/ev.png" class="img-fluid w-100" alt="">
@@ -518,7 +520,7 @@ Il est important de noter qu'il ne faut pas copier le code complet du tableau de
 </p>
 <p class="my-2">
   étape 1 : je vais crrer une page dit admin-layout dont laquelle je vais mettre une dashboard administrateur.<br>
-  étapes 2 : configurer quelque routes <br>
+  étapes 2 : configurer nos routes <br>
 
 </p>
 <img src="/assets/admin1.png" class="img-fluid w-100 my-3" alt="">
@@ -537,16 +539,6 @@ Il est important de noter qu'il ne faut pas copier le code complet du tableau de
 </p>
 
 
-
-<ul>
-  <li>
-<strong>to :</strong>     Cette propriété spécifie la nouvelle route vers laquelle vous souhaitez rediriger l'utilisateur. Dans notre cas, c'est /signin.
-  </li>
-  <li>
-   <strong>replace :</strong>  Lorsque cette propriété est définie, elle remplace l'entrée actuelle dans l'historique du navigateur. Cela signifie que l'utilisateur ne pourra pas revenir à l'ancienne route (/login) en utilisant le bouton "Précédent" de son navigateur. La redirection devient une étape invisible dans l'historique.
-  </li>
-
-</ul>
 
 
 
